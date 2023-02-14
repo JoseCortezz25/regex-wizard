@@ -1,5 +1,5 @@
 import React from 'react'
-import arrowIcon from '../../../public/static/icons/arrow-double.svg'
+import arrowIcon from '../../assets/static/icons/arrow-double.svg'
 import { Translator } from '../Translator/Translator'
 import './Presentation.css'
 

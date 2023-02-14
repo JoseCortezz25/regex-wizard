@@ -1,6 +1,5 @@
 .Presentation {
-  /* margin-bottom: var(--mb-2); */
-  /* border: 1px solid red; */
+  margin-top: var(--mb-2-5);
 }
 
 .Presentation h1 {
@@ -15,12 +14,7 @@
 }
 
 .Presentation__explain {
-  /* width: 100%; */
-  /* display: inline-flex; */
-  /* border: 1px solid blue; */
-  /* text-align: center; */
   place-content: center;
-  /* margin: 0 auto; */
 }
 
 .Presentation__explain p {
@@ -30,14 +24,29 @@
 }
 
 .Presentation__explain span {
-  /* width: 100%; */
   width: 70px;
-  /* border: 1px solid rebeccapurple; */
   display: flex;
   place-content: center;
   margin: 0 var(--mb-1) 0 var(--mb-1) ;
+  animation: spin 2s linear infinite;
+
 }
 
 .Presentation__explain img {
   width: 25px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(-190deg);
+  }
+  60% {
+    transform: rotate(-190deg);
+  } 
+  90% {
+    transform: rotate(0deg);
+  }
 }

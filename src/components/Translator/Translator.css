@@ -2,9 +2,15 @@
   width: 100%;
 }
 
+.Textarea {
+  position: relative;
+  margin-top: var(--mb-2);
+  margin-bottom: var(--mb-0-5);
+  max-width: 968px;
+}
+
 .Translator textarea {
   width: 100%;
-  max-width: 968px;
   resize: none;
 
   border: none;
@@ -13,13 +19,11 @@
   border-radius: var(--mb-1-5);
   outline: none;
   padding: var(--mb-1-5);
-  margin-top: var(--mb-2);
 }
 
 .Translator form button {
   background: var(--title-color-dark);
   color: var(--container-color);
-  /* background-color: var(--white-color); */
   width: 100%;
   padding: var(--mb-1);
   font-weight: 600;
@@ -37,9 +41,7 @@
 .outcome {
   max-width: 968px;
   padding: 1rem;
-  /* position: relative; */
   padding: 3px;
-  /* background: linear-gradient(to right, #58B19F, #3B3B98); */
   border-radius: var(--mb-1-5);
   border: 2px solid var(--title-color-dark);
   padding: var(--mb-1-5);
@@ -57,13 +59,10 @@
 }
 
 .result {
-  /* width: 100%; */
   display: inline-flex;
-  font-size: var(--h2-font-size);
+  font-size: var(--h1-font-size);
   margin: auto;
   margin-bottom: var(--mb-2);
-  /* text-align: center; */
-  /* text-align: center; */
 }
 
 .disclamer {
@@ -72,3 +71,30 @@
   font-size: var(--small-font-size);
   text-align: center;
 }
+
+.Button__toggle {
+  background-color: var(--title-color-dark);
+  color: var(--body-color);
+  padding: var(--mb-0-5) var(--mb-1);
+  border-radius: var(--mb-1);
+  
+  font-weight: bold;
+  position: absolute;
+  display: inline-flex;
+  bottom: 20px;
+  left: 20px;
+  font-size: var(--small-font-size);
+  cursor: pointer;
+  transition: all var(--ts-soft);
+}
+
+.Button__toggle:hover {
+  transform: scale(105%);
+}
+
+@media screen and (max-width: 576px) {
+  .result {
+    font-size: var(--h2-font-size);
+  }
+}
+

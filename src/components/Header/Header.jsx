@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 // import Image from "next/image";
-import menuIcon from "../../../public/static/icons/menu.svg";
-import closeIcon from "../../../public/static/icons/close.svg";
+// import menuIcon from "../../assets/static/icons/menu.svg";
+// import closeIcon from "../../../public/static/icons/close.svg";
 import "./Header.css";
 
 const Header = () => {
@@ -52,12 +52,12 @@ const Header = () => {
           </i>
         </div> */}
 
-        <div
+        {/* <div
           className="nav__toggle"
           onClick={() => showMenu((prevState) => !prevState)}
         >
           <img src={menuIcon} alt="" />
-        </div>
+        </div> */}
       </nav>
     </header>
   );

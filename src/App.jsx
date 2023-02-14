@@ -5,13 +5,14 @@ import "./App.css";
 import Presentation from "./components/Presentation/Presentation";
 
 function App() {
-
   return (
-    <main className="Main">
-      <Header />
-      <Presentation />
+    <>
+      <main className="Main">
+        <Header />
+        <Presentation />
+      </main>
       <Footer />
-    </main>
+    </>
   );
 }
 
