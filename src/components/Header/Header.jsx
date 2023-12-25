@@ -6,7 +6,7 @@ const Header = () => {
     <header className="header">
       <nav className="nav container">
         <a href="" className="nav__logo">
-          <img src="/public/wizard.png" alt="A stunning logo" />
+          <img src="/wizard.png" alt="A stunning logo" />
           <p>RegEx Wizard</p>
         </a>
       </nav>
