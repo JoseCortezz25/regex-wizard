@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { getRegEx, getSpanishFromRegEx } from "../../services/regex";
-import Loader from "../Loader/Loader";
+import { toast } from "react-toastify";
 import ToggleTranslator from "../ToggleTranslator/ToggleTranslator";
+import Loader from "../Loader/Loader";
 import "./Translator.css";
 
 const Translator = () => {
@@ -17,8 +18,8 @@ const Translator = () => {
 
     if (!toggle) {
       getRegEx(prompt)
-        .then(({ data }) => {
-          setResult(data.message);
+        .then((response) => {
+          setResult(response);
         })
         .catch((error) => {
           console.log("error", error);
@@ -28,8 +29,8 @@ const Translator = () => {
         });
     } else {
       getSpanishFromRegEx(prompt)
-        .then(({ data }) => {
-          setResult(data.message);
+        .then((response) => {
+          setResult(response);
         })
         .catch((error) => {
           console.log("error", error);
@@ -38,6 +39,15 @@ const Translator = () => {
           setLoading(false);
         });
     }
+  };
+
+  const onCopy = async () => {
+    const promise = await navigator.clipboard.writeText(result);
+    toast.promise(promise, {
+      pending: "Copiando...",
+      success: "Copiado!",
+      error: "Error al copiar",
+    });
   };
 
   return (
@@ -53,14 +63,14 @@ const Translator = () => {
           />
           <ToggleTranslator setToggle={setToggle} toggle={toggle} />
         </div>
-        <button>De una</button>
+        <button>Generar</button>
       </form>
       <p>
         Consejo: Intenta ser lo más explícito posible con la pregunta. Piensa
         que le estas pidiendo a una persona.
       </p>
 
-      <div className="outcome">
+      <button className="outcome" onClick={onCopy}>
         {!loading && !!result ? (
           <div className="result">{result}</div>
         ) : (
@@ -71,7 +81,7 @@ const Translator = () => {
           imperfecciones en el modelo. Por favor, verifique estos resultados
           antes de ponerlos en producción.
         </p>
-      </div>
+      </button>
     </div>
   );
 };

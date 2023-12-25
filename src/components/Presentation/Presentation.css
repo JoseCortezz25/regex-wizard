@@ -9,7 +9,7 @@
 
 .Presentation__subtitle {
   font-size: var(--h2-font-size);
-  text-align: center;  
+  text-align: center;
   margin-bottom: var(--mb-1-5);
 }
 
@@ -27,9 +27,8 @@
   width: 70px;
   display: flex;
   place-content: center;
-  margin: 0 var(--mb-1) 0 var(--mb-1) ;
+  margin: 0 var(--mb-1) 0 var(--mb-1);
   animation: spin 2s linear infinite;
-
 }
 
 .Presentation__explain img {
@@ -41,11 +40,11 @@
     transform: rotate(0deg);
   }
   40% {
-    transform: rotate(-190deg);
+    transform: rotate(-185deg);
   }
   60% {
-    transform: rotate(-190deg);
-  } 
+    transform: rotate(-185deg);
+  }
   90% {
     transform: rotate(0deg);
   }

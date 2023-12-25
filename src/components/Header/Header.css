@@ -25,7 +25,21 @@
 .nav__toggle {
   color: var(--title-color);
   font-size: var(--h3-font-size);
-  font-weight: var(--font-medium);
+  font-weight: var(--font-semi-bold);
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav__logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.nav__logo p {
+  margin-left: 15px;
 }
 
 .nav__list {
@@ -120,9 +134,6 @@
   .nav__link {
     text-align: center;
   }
-}
-
-@media screen and (max-width: 576px) {
 }
 
 @media screen and (max-width: 350px) {

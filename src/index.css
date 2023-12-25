@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Space+Grotesk:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Space+Grotesk:wght@400;600&display=swap");
 
 * {
   padding: 0;
@@ -17,11 +17,11 @@
   --title-color-dark: hsl(var(--hue), var(--sat), 0%);
   --text-color: hsl(var(--hue), var(--sat), 46%);
   /* --body-color: hsl(var(--hue), var(--sat), 98%); */
-  --body-color: #FCFAFB;
+  --body-color: #fcfafb;
   --container-color: #fff;
 
   /*========== Font and typography ==========*/
-  --body-font: 'Space Grotesk', sans-serif;
+  --body-font: "Space Grotesk", sans-serif;
 
   /*.5rem = 8px | 1rem = 16px ...*/
   --big-font-size: 3.5rem;
@@ -54,8 +54,7 @@
   --z-fixed: 100;
   --z-modal: 1000;
 
-  --ts-soft: 120ms ease-in-out;
-
+  --ts-soft: all 200ms ease-in-out;
 }
 
 /* Responsive typography */
@@ -118,7 +117,7 @@ img {
   display: inline-block;
   background-color: var(--title-color);
   color: var(--container-color);
-  padding: .8rem 1.5rem;
+  padding: 0.8rem 1.5rem;
   border-radius: 1rem;
   font-weight: var(--font-medium);
 }
@@ -159,7 +158,6 @@ img {
 
 .section {
   padding: 6rem 0 2rem;
-  /* border: 1px solid rebeccapurple; */
 }
 
 .section__title {
@@ -177,7 +175,6 @@ img {
 .section__subtitle {
   text-align: center;
 }
-
 
 @media screen and (max-width: 992px) {
   .container {
@@ -208,15 +205,11 @@ img {
   .Main {
     width: 85%;
     margin: auto;
-    /* border: 2px dotted darkblue; */
   }
 
   .grid {
     justify-content: center;
   }
-}
-
-@media screen and (max-width: 576px) {
 }
 
 @media screen and (max-width: 350px) {
