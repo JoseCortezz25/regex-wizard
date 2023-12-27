@@ -6,7 +6,7 @@ El proyecto hace uso de Google Gemini Pro.
 
 ## Demostración
 
-![Vista en escritorio](https://lh3.googleusercontent.com/u/2/drive-viewer/AAOQEOQZFbWrUPmS4vyoQf6KkBIOR74lvib7_u4bhiRJ3l5DQ3iiTGEvc5C7qWSHM-NEWySsNkam_miv7PjX2EWs8yPOcGp_Bw=w1920-h973)
+![Vista en escritorio](https://raw.githubusercontent.com/JoseCortezz25/regex-wizard/main/public/screenshot.png)
 
 ## Tecnologías
 
