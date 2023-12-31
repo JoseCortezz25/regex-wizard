@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { getRegEx, getSpanishFromRegEx } from "../../services/regex";
-import { toast } from "react-toastify";
+import { toast } from "sonner";
 import ToggleTranslator from "../ToggleTranslator/ToggleTranslator";
 import Loader from "../Loader/Loader";
 import "./Translator.css";
@@ -13,6 +13,12 @@ const Translator = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if(prompt === "") {
+      toast.error('Por favor, escribe una petición.')
+      return;
+    }
+
     setLoading(true);
     setPrompt("");
 
@@ -42,12 +48,8 @@ const Translator = () => {
   };
 
   const onCopy = async () => {
-    const promise = await navigator.clipboard.writeText(result);
-    toast.promise(promise, {
-      pending: "Copiando...",
-      success: "Copiado!",
-      error: "Error al copiar",
-    });
+    await navigator.clipboard.writeText(result);
+    toast.success('Copiado al portapapeles')
   };
 
   return (
