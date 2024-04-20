@@ -85,7 +85,7 @@
   left: 20px;
   font-size: var(--small-font-size);
   cursor: pointer;
-  transition: all var(--ts-soft);
+  transition: var(--ts-soft);
 }
 
 .Button__toggle:hover {

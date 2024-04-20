@@ -176,6 +176,59 @@ img {
   text-align: center;
 }
 
+.external-link {
+  display: flex;
+  gap: var(--mb-0-5);
+  align-items: center;
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+  margin: var(--mb-1) var(--mb-0-25);
+}
+
+.external-link .icon {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+}
+
+.external-link a {
+  color: var(--title-color);
+  text-decoration: underline;
+}
+
+.buttons-box {
+  display: flex;
+  gap: var(--mb-0-5);
+}
+
+.btn-setting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 60px;
+}
+
+.btn-setting .icon {
+  width: 30px;
+  height: 30px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+}
+
+.btn-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-icon .icon {
+  margin-right: var(--mb-0-5);
+}
+
 @media screen and (max-width: 992px) {
   .container {
     margin-left: var(--mb-1-5);

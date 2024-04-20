@@ -29,6 +29,7 @@
   place-content: center;
   margin: 0 var(--mb-1) 0 var(--mb-1);
   animation: spin 2s linear infinite;
+  transition: var(--ts-soft);
 }
 
 .Presentation__explain img {
