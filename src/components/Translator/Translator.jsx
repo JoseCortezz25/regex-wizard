@@ -28,7 +28,6 @@ const Translator = () => {
     }
 
     setLoading(true);
-    setPrompt("");
 
     if (!toggle) {
       getRegEx(prompt)
@@ -65,7 +64,6 @@ const Translator = () => {
     }
     localStorage.setItem("API_KEY", e.target[0].value);
     toast.success('API KEY guardada con éxito');
-    setIsOpen(false);
   }
 
   const toggleApiKey = (e) => {
