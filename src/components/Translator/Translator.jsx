@@ -33,7 +33,6 @@ const Translator = () => {
     if (!toggle) {
       getRegEx(prompt)
         .then((response) => {
-          console.log("response", response);
           setResult(response);
         })
         .catch((error) => {
