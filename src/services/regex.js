@@ -1,8 +1,6 @@
-import { useState, useEffect } from 'react';
-import axios from 'axios'
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const genAI = new GoogleGenerativeAI(import.meta.env.VITE_API_KEY);
+const genAI = new GoogleGenerativeAI(localStorage.getItem("API_KEY"));
 
 async function getRegEx(userPrompt) {
   const model = genAI.getGenerativeModel({ model: "gemini-pro" });
@@ -27,7 +25,7 @@ async function getRegEx(userPrompt) {
     return text;
 
   } catch (error) {
-    return error;
+    throw new Error(error);
   }
 }
 
@@ -56,7 +54,7 @@ async function getSpanishFromRegEx(userPrompt) {
     return text;
 
   } catch (error) {
-    return error;
+    throw new Error(error);
   }
 }
 
