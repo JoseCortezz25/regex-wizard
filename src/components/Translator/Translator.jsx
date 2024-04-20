@@ -54,7 +54,6 @@ const Translator = () => {
         });
     }
   };
-  // AIzaSyAnzLcz7dGcS4jmDTX5J36geyOSXHrD0-k
 
   const saveApiKey = (e) => {
     e.preventDefault();
